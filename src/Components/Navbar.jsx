@@ -6,7 +6,7 @@ import '../Style/Navbar.css';
 import SunIcon from '../Media/relleno.svg';
 import MoonIcon from '../Media/dark-mode-night-moon-svgrepo-com.svg';
 
-// Logo de la empresa o sitio web mediante un enlace
+
 const logoUrl = 'https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/5236467/5236467-1655160789012-0df4009db8388.jpg'; // Cambia este enlace por la URL de tu logo
 
 const Navbar = () => {

@@ -20,19 +20,19 @@
 .logo-link {
   display: flex;
   align-items: center;
-  margin-right: auto; /* Empuja el logo a la izquierda */
+  margin-right: auto; 
 }
 
 .logo {
-  height: 40px; /* Ajusta el tamaño del logo */
-  margin-right: 20px; /* Espacio entre el logo y los elementos */
+  height: 40px; 
+  margin-right: 20px; 
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: center;
-  flex-grow: 1; /* Expande los enlaces para centrar */
+  flex-grow: 1; 
   gap: 20px;
 }
 
@@ -52,9 +52,8 @@
   cursor: pointer;
   padding: 0;
   position: relative;
-  margin-left: auto; /* Empuja el botón a la derecha */
+  margin-left: auto;
 }
-
 .theme-icon {
   width: 24px;
   height: 24px;

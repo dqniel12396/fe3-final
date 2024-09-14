@@ -50,7 +50,6 @@ form {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .card.light {
   background-color: #f9f9f9;
   color: #333;
@@ -76,7 +75,7 @@ form {
 
 .detail-link {
   margin-top: 10px;
-  color: #0056b3; /* Azul oscuro para tema claro */
+  color: #0056b3;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -84,15 +83,15 @@ form {
 
 .detail-link:hover {
   text-decoration: underline;
-  color: #003366; /* Azul más oscuro en hover */
+  color: #003366;
 }
 
 .card.dark .detail-link {
-  color: #66d9ef; /* Cian claro en tema oscuro */
+  color: #66d9ef;
 }
 
 .card.dark .detail-link:hover {
-  color: #a6e22e; /* Verde brillante en hover */
+  color: #a6e22e;
 }
 
 .favButton {
@@ -111,11 +110,11 @@ form {
 }
 
 .favButton.remove {
-  background-color: #f44336; /* Color rojo para eliminar */
+  background-color: #f44336;
 }
 
 .favButton.remove:hover {
-  background-color: #d32f2f; /* Color rojo oscuro para hover */
+  background-color: #d32f2f;
 }
 
 .dark .favButton {
@@ -128,7 +127,7 @@ form {
 }
 
 .favorited {
-  color: #d32f2f; /* Rojo brillante para tema claro */
+  color: #d32f2f;
   font-style: italic;
   font-size: 1rem;
   text-align: center;
@@ -136,11 +135,11 @@ form {
 }
 
 .favorited.light {
-  color: #d32f2f; /* Rojo brillante para tema claro */
+  color: #d32f2f;
 }
 
 .favorited.dark {
-  color: #66d9ef; /* Cian claro en tema oscuro */
+  color: #66d9ef;
 }
 
 .dark {

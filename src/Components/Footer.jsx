@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from './utils/global.context';
-import '../Style/Footer.css'; // Asegúrate de que este archivo CSS exista
-
+import '../Style/Footer.css'; 
 const Footer = () => {
   const { state } = useContext(GlobalContext);
   const { theme } = state;
