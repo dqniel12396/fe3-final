@@ -1,0 +1,78 @@
+.contact {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.contact.dark {
+  background-color: #272822;
+  color: #f8f8f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #f92672;
+}
+
+.success {
+  color: #a6e22e;
+}
+
+.contact.dark form {
+  background-color: #49483e;
+  border-color: #75715e;
+}
+
+.contact.dark form input {
+  background-color: #3e3d32;
+  border-color: #75715e;
+  color: #f8f8f2;
+}
+
+.contact.dark form input[type="submit"] {
+  background-color: #66d9ef;
+}
+
+.contact.dark form input[type="submit"]:hover {
+  background-color: #a6e22e;
+}

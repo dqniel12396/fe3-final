@@ -1,0 +1,22 @@
+.home {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 80vh;
+}
+
+.home.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.home.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}

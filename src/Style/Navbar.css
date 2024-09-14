@@ -1,0 +1,66 @@
+.navbar {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.dark {
+  background-color: #272822;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Empuja el logo a la izquierda */
+}
+
+.logo {
+  height: 40px; /* Ajusta el tamaño del logo */
+  margin-right: 20px; /* Espacio entre el logo y los elementos */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Expande los enlaces para centrar */
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar.dark .nav-links a {
+  color: #f8f8f2;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  margin-left: auto; /* Empuja el botón a la derecha */
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover .theme-icon {
+  transform: scale(1.1);
+}

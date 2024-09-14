@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8; 
+  color: #333; 
+  border-top: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer.dark {
+  background-color: #272822; 
+  color: #f8f8f2;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+}
+
+.footer-dentist-img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}

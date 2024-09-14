@@ -1,67 +1,32 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
-
-h1{
+h1 {
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
-  width: 80vw;
   justify-content: flex-start;
   padding: 1rem;
 }
 
-a{
+a {
   color: #000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
-a:hover{
-  color: rgb(136, 136, 136);
-} 
 
-footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
+a:hover {
+  color: #888;
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
-
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -70,37 +35,145 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  padding: 1rem;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+
+.card.light {
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.card-grid{
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  width: 90vw;
+.card.dark {
+  background-color: #272822;
+  color: #f8f8f2;
+  border: 1px solid #75715e;
+}
+
+.dentist-image {
+  width: 100px;
   height: auto;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dentist-image:hover {
+  transform: scale(1.05);
+}
+
+.detail-link {
+  margin-top: 10px;
+  color: #0056b3; /* Azul oscuro para tema claro */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+  color: #003366; /* Azul más oscuro en hover */
+}
+
+.card.dark .detail-link {
+  color: #66d9ef; /* Cian claro en tema oscuro */
+}
+
+.card.dark .detail-link:hover {
+  color: #a6e22e; /* Verde brillante en hover */
+}
+
+.favButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favButton:hover {
+  background-color: #0056b3;
+}
+
+.favButton.remove {
+  background-color: #f44336; /* Color rojo para eliminar */
+}
+
+.favButton.remove:hover {
+  background-color: #d32f2f; /* Color rojo oscuro para hover */
+}
+
+.dark .favButton {
+  background-color: #75715e;
+  color: #f8f8f2;
+}
+
+.dark .favButton:hover {
+  background-color: #66d9ef;
+}
+
+.favorited {
+  color: #d32f2f; /* Rojo brillante para tema claro */
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.favorited.light {
+  color: #d32f2f; /* Rojo brillante para tema claro */
+}
+
+.favorited.dark {
+  color: #66d9ef; /* Cian claro en tema oscuro */
+}
+
+.dark {
+  background-color: #272822;
+  color: #f8f8f2;
+}
+
+.dark a {
+  color: #66d9ef;
+}
+
+.dark nav {
+  background-color: #49483e;
+}
+
+.dark button {
+  background-color: #75715e;
+  color: #f8f8f2;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark button:hover {
+  background-color: #66d9ef;
 }
 
 table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
-
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
 }
 
 td, th {
@@ -110,13 +183,13 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #3e3d32;
 }
 
-.dark{
-  background-color: #12121296;
-  color: white;
+.success {
+  color: #a6e22e;
 }
-.dark > a {
-  color: white;
+
+.error {
+  color: #f92672;
 }
